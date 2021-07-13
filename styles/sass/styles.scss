@@ -1,2 +1,59 @@
-@import "setup";
-@import "variables";
+body {
+  background-color: #fee185;
+  color: white;
+  margin: 0;
+  font-family: rubik;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 54px;
+}
+
+#pokemons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  list-style: none;
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+  border: 1px solid orangered;
+  margin: 10px;
+}
+
+#searchBar {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+.pokeName {
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  font-size: 32px;
+  font-weight: normal;
+}
+.pokeType {
+  margin-top: 5px;
+  color: #666;
+  font-weight: lighter;
+}
+
+.pokeImg {
+  height: 180px;
+}
+footer {
+  background-color: orangered;
+
+  p {
+    text-align: center;
+    color: black;
+    padding: 10px 0 0 0;
+    margin-bottom: 0;
+  }
+}
