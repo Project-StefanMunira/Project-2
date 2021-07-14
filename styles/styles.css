@@ -283,7 +283,7 @@ h1 {
 }
 
 #searchBar {
-  width: 50%;
+  width: 40vw;
   padding: 10px;
   display: block;
   margin: 0 auto;
@@ -348,7 +348,7 @@ footer p {
 i {
   position: absolute;
   top: 0;
-  left: 200px;
+  left: 27%;
 }
 
 .logoContainer {
