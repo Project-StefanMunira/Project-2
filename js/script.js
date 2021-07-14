@@ -90,7 +90,7 @@ const displayPokemon = (pokemon) => {
     (poke) => `
         <li class="card">
             <img class="pokeImg" src="${poke.image}"/>
-            <h2 class="pokeName">${poke.id}. ${poke.name}</h2>
+            <h2 class="pokeName"> ${poke.name}</h2>
             <p class="pokeType">Type: ${poke.type}</p>
         </li>
     `

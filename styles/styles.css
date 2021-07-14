@@ -25,11 +25,12 @@ h1 {
 .card {
   list-style: none;
   padding: 40px;
-  background-color: #f4f4f4;
+  background-color: white;
   color: #222;
   text-align: center;
   border: 1px solid orangered;
   margin: 10px;
+  border-radius: 10px;
 }
 
 #searchBar {
