@@ -1,3 +1,6 @@
+
+
+
 const pokedex = document.getElementById("pokemons");
 const searchBar = document.getElementById("searchBar");
 const pokemonCount = 150;

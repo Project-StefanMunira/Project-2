@@ -294,6 +294,7 @@ h1 {
   display: block;
   font-size: 1.8rem;
   border: none;
+  border-radius: 50px;
 }
 
 ::-webkit-input-placeholder {
@@ -363,6 +364,7 @@ footer p {
 
 i {
   padding-right: 20px;
+  margin-top: 8px;
 }
 
 .logoContainer {
@@ -397,4 +399,38 @@ i {
 
 ul {
   list-style: none;
+}
+
+@media (max-width: 600px) {
+  ::-webkit-input-placeholder {
+    font-size: 1.5rem;
+  }
+  ::-moz-placeholder {
+    font-size: 1.5rem;
+  }
+  :-ms-input-placeholder {
+    font-size: 1.5rem;
+  }
+  ::-ms-input-placeholder {
+    font-size: 1.5rem;
+  }
+  ::placeholder {
+    font-size: 1.5rem;
+  }
+
+  .pokeCard {
+    padding: 0 0 10px;
+  }
+
+  footer p {
+    font-size: 1.5rem;
+  }
+
+  .pokeName {
+    font-size: 2.2rem;
+  }
+
+  .pokeImg {
+    height: 150px;
+  }
 }
