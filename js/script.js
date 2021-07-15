@@ -1,6 +1,7 @@
 const pokedex = document.getElementById("pokemons");
 const searchBar = document.getElementById("searchBar");
 const pokemonCount = 150;
+const btnTop = document.getElementById('scrollTopBtn');
 // create a let variable of an empty array so we can filter out the user input into a new array
 let pokemon = [];
 searchBar.addEventListener("keyup", (e) => {
@@ -63,8 +64,11 @@ const displayPokemonCard = (pokemon) => {
             <img class="pokeImg" src="${poke.pokeimage}"/>
             <p class="pokeType">Type: ${poke.poketype}</p>
         </li>
+        
     `
-  );
+  )
+  .join('')
+  
 
   // take the pokemon string and set it as innerHtml
   pokedex.innerHTML = pokeString;
@@ -73,3 +77,17 @@ const displayPokemonCard = (pokemon) => {
 // calling the getpokemon function
 
 getPokemon();
+
+// Button bottom function 
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 20) {
+    btnTop.style.display = "block";
+  } else {
+    btnTop.style.display = "none";
+  }
+}
+ function topFunction() {
+
+   document.documentElement.scrollTop = 0; 
+ } 
