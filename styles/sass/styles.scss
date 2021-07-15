@@ -22,11 +22,11 @@ h1 {
 #pokemons {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  // padding: 0px 50px;
+  justify-content: center;
+  padding: 50px 0;
 }
 
-.card {
+.pokeCard {
   list-style: none;
   padding: 40px;
   background-color: $white;
@@ -42,8 +42,7 @@ h1 {
   width: 40vw;
   padding: 10px;
   display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  
   border: none;
 }
 
@@ -94,6 +93,9 @@ h1 {
 
 footer {
   background-color: orangered;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 
   p {
     text-align: center;
@@ -104,13 +106,13 @@ footer {
 }
 
 .iconContainer {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 i {
-  position: absolute;
-  top: 0;
-  left: 27%;
+  padding-right: 20px;
 }
 
 .logoContainer {
