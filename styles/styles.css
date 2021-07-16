@@ -287,6 +287,13 @@ h1 {
   margin: 10px;
   margin-bottom: 50px;
 }
+.pokeCard .pokeName {
+  letter-spacing: 1.2px;
+}
+.pokeCard .pokeType {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
 
 #searchBar {
   width: 40vw;
@@ -350,6 +357,7 @@ footer p {
   margin-bottom: 0;
   font-size: 1.8rem;
   font-family: "Roboto", sans-serif;
+  letter-spacing: 1.2px;
 }
 
 .iconContainer {
@@ -377,7 +385,7 @@ i {
   width: 50%;
 }
 
-#scrollTopBtn {
+#scrollTop {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -388,13 +396,15 @@ i {
   background-color: #9cdcf0;
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 13px;
   border-radius: 10px;
   font-size: 3rem;
 }
 
-#scrollTopBtn:hover {
-  background-color: #555;
+#scrollTop:hover {
+  background-color: #3c5aa6;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 ul {

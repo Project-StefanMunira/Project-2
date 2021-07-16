@@ -1,10 +1,7 @@
-
-
-
 const pokedex = document.getElementById("pokemons");
 const searchBar = document.getElementById("searchBar");
 const pokemonCount = 150;
-const btnTop = document.getElementById('scrollTopBtn');
+const btnTop = document.getElementById('scrollTop');
 // create a let variable of an empty array so we can filter out the user input into a new array
 let pokemon = [];
 searchBar.addEventListener("keyup", (e) => {
@@ -35,7 +32,7 @@ const getPokemon = () => {
     );
   }
   
-  // outside of our for loop we are  passing the promises.push into the promise.all
+// outside of our for loop we are  passing the promises.push into the promise.all
   // promise all makes our pokemons all come in at once rather than individually
   Promise.all(promisesArr)
   .then((responses) => {
@@ -84,7 +81,7 @@ getPokemon();
 // Button bottom function 
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     btnTop.style.display = "block";
   } else {
     btnTop.style.display = "none";
